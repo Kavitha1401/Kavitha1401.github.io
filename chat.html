@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <script>
+    function hello()
+{
+  document.getElementById("ans-1").innerHTML="We are friends now.But Let's take it a step further.Shall we?";
+  document.getElementById("btn1").innerHTML="Yes";
+    document.getElementById("btn2").innerHTML="Nah";
+  document.getElementById("btn1").removeAttribute('hidden');
+  document.getElementById("btn2").removeAttribute('hidden');
+}
+
+function bye()
+{
+  document.getElementById("ans-1").innerHTML="Oh so you don't wanna be frds cuz you want us to be more than that...Naughty";
+    document.getElementById("btn1").innerHTML="correct";
+    document.getElementById("btn2").innerHTML="hell nah";
+    document.getElementById("btn1").removeAttribute('hidden');
+  document.getElementById("btn2").removeAttribute('hidden');
+}
+
+function lovers()
+{
+    document.getElementById("ans-2").innerHTML="nae goyang-i bogo sip-eo (translation for bitches that don't understand:do you wanna see my cat)";
+    document.getElementById("btn3").innerHTML="yes";
+    document.getElementById("btn4").innerHTML="yes returns";
+    document.getElementById("btn3").removeAttribute('hidden');
+  document.getElementById("btn4").removeAttribute('hidden');
+}
+
+function nolovers()
+{
+    document.getElementById("ans-2").innerHTML="Thank god , I was worried you might say yes cuz my standards high and also I have my prince on white horse waiting for me, so byeeee" ;
+}
+
+function yes()
+{
+    document.getElementById("ans-3").innerHTML="Haha you wish , also I don't have a cat you fool" ;
+}
+
+function yesreturns()
+{
+    document.getElementById("ans-3").innerHTML="I can't show you even if u want to cuz i don't have one" ;
+}
+
+    </script>
+    <div class="nav-conatiner">
+        <div class="navigation">
+                <div class="header">
+                    <img src="buddy.png" height="100px" width="100px">
+                    <h3>Buddy Bot</h3>
+                </div>
+                <div class="link">
+                        <div><a href="index.html">Home</a></div>
+                        <div><a href="chat.html">Chat</a></div>
+                        <div><a href="#about">About</a></div>
+                        <div><a href="#contact">Contact</a></div>
+                </div>
+        </div>
+       </div>
+    <pre >Hey!!! I'm dino. What's your name?</pre>
+   <button class="btn" onclick="hello()">Hello</button>
+    <button class="btn" onclick="bye()">Bye</button>
+    <pre id="ans-1"></pre>
+    <button  hidden class="btn" id="btn1" onclick="lovers()" ></button>
+    <button hidden class="btn" id="btn2" onclick="nolovers()"></button>
+    <pre id="ans-2"></pre>
+    <button  hidden class="btn" id="btn3" onclick="yes()" ></button>
+    <button hidden class="btn" id="btn4" onclick="yesreturns()"></button>
+    <pre id="ans-3"></pre>
+</body>
+</html>
